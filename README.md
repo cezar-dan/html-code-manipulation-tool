@@ -8,7 +8,7 @@
 
 The HTML code given as input will be stored as a tree in which every node will represent a tag. The exact structure of the HTML tree goes as follows:
 
-- The root node, also reffered to as the `null node`, is the only node which has no corresponding HTML tag. It's children consist of only `<html>` nodes.
+- The root node, also referred to as the `null node`, is the only node which has no corresponding HTML tag. It's children consist of only `<html>` nodes.
 - The `<html>` node can be seen as the root of a single html file. The `null node` exists only as a way to group up different HTML trees into the same data structure.
 - Each `<html>` node has exactly 2 children: the `<head>` and `<body>` tags.
 - Internal nodes represent tags that also contain other tags.
@@ -69,7 +69,7 @@ The following restrictions have to be met regarding the input files, otherwise t
 - An HTML tag will have no more than one class.
 - No HTML tag will contain the `id` attribute.
 - Only leaf nodes may contain useful information.
-- There will be no `<script>` nodes containing Javascript code.
+- There will be no `<script>` nodes containing JavaScript code.
 - There will be no `<style>` tags containing CSS code.
 
 ## Valid Commands
@@ -123,4 +123,4 @@ A short description of each folder can be found here:
   - Here, in the buildTree() function, we also find the input parsing logic of the program.
   - As this assignment was submitted during my first university year, I had no knowledge of Automata Theory.
   - That being said, the buildTree() function is a rudimentary finite state machine which parses the input string character by character.
-- `InOut`: contains the I/O logic, but also some string parsing capabilites
+- `InOut`: contains the I/O logic, but also some string parsing capabilities
